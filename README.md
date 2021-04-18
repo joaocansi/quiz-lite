@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="simple-raffle" title="simple-raffle" src=".github/simple-raffle-title.png" />
+  <img alt="simple-raffle" title="simple-raffle" src=".github/quiz-lite-title.png" />
 </h1>
 <p align="center">
   <a href="#-techs">✨ Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -24,25 +24,47 @@ This project was created using this following technologies:
 
 ## 💻 Project
 
-Simple Raffle is a project that allows you to draw a raffle. You just need to put the first number, last number and the amount of numbers that will be drawn. The system will generate the result and will create an exclusive link that you can share with the participants.
+This project allows you to create and play quizzes. You'll be able to create your own, play others quizzes and check the result of your own quiz. 
 
 ## 🔖 Layout
 
 <p align="center">
-  <img width="700" src=".github/Screenshot_5.png" />
+  <img width="700" src=".github/home_page.png" />
 </p>
 
 <p align="center">
-  <img width="700" src=".github/Screenshot_1.png" />
+  <img width="700" src=".github/search-quiz.png" />
+</p>
+
+<p align="center">
+  <img width="700" src=".github/search-result.png" />
+</p>
+
+<p align="center">
+  <img width="700" src=".github/quiz-result.png" />
+</p>
+
+<p align="center">
+  <img width="700" src=".github/quiz-player-result.png" />
+</p>
+
+<p align="center">
+  <img width="700" src=".github/quiz-player-info.png" />
+</p>
+
+<p align="center">
+  <img width="700" src=".github/questions.png" />
 </p>
 
 ## 🚀 How to start
 
 - Clone this repository
+- Start postgres database (you'll need Docker):
+  - `docker-compose up`
 - Back-end:
   - `cd server`
-  - `yarn typeorm migration:run`
-  - `yarn start`
+  - `yarn typeorm:dev migration:run`
+  - `yarn start:dev`
 - Front-end: 
   - `cd client`
   - `yarn start`
