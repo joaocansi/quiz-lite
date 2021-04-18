@@ -11,7 +11,7 @@
   <img alt="License" src="https://img.shields.io/apm/l/vim-mode?color=DB8E35">
 </p>
 <p align="center">
-  <img width="700" src=".github/mackbook-image.png" />  
+  <img width="700" src=".github/macbook-image.png" />  
 </p>
 
 ## ✨ Techs
