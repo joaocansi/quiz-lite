@@ -1,0 +1,244 @@
+.quiz-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--blue);
+  
+  .header {
+    display: flex;
+    align-items: center;
+  
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    color: var(--white);
+  
+    font-size: 2.5em;
+    text-transform: uppercase;
+  
+    font-weight: 400;
+    border-bottom: 4px solid var(--white);
+  
+    line-height: 110%;
+  }
+
+  .playing {
+    text-align: center;
+    height: 100vh;
+  
+    display: flex;
+  
+    justify-content: space-between;
+    flex-direction: column;
+  
+    .question-box {
+      width: 90%;
+      max-width: 640px;
+  
+      font-family: 'Rajdhani', 'Archivo', sans-serif;
+      margin: 0 auto;
+    }
+  
+    .question {
+      font-size: 2.5em;
+      color: var(--white);
+    }
+  
+    .answers-box {
+      margin-top: 2rem;
+      display: grid;
+  
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+
+      align-items: center;
+    }
+  
+    .answer {
+      display: flex;
+      align-items: center;
+  
+      background-color: var(--white);  
+      font-size: 1.75em;
+  
+      cursor: pointer;
+      transition: background-color .5s;
+
+      padding: .5rem;
+    }
+  
+    .answer-id {
+      background-color: var(--light-gray);
+      padding: 1.25rem;
+
+      color: var(--blue);
+      transition: background-color .5s;
+    }
+  
+    .answer-content {
+      padding-left: 1.5rem;
+      color: var(--dark-gray);
+    }
+  
+    div.wrong-answer {
+      background-color: var(--red);
+      p {
+        color: var(--white);
+        font-weight: 500;
+      }
+  
+      .answer-id {
+        font-weight: 500;
+        color: var(--white);
+        background-color: var(--red);
+        filter: brightness(.9);
+      }
+    }
+  
+    div.correct-answer {
+      background-color: var(--green);
+      p {
+        color: var(--white);
+        font-weight: 500;
+      }
+  
+      .answer-id {
+        color: var(--white);
+        background-color: var(--green);
+        filter: brightness(.9);
+        font-weight: 500;
+      }
+    }
+  
+    @media (max-width: 640px) {
+      .answers-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  
+  .result {
+    text-align: center;
+    height: 100vh;
+  
+    display: flex;
+  
+    justify-content: space-between;
+    flex-direction: column;
+  
+    .header h2 {
+      font-size: 5em;
+      border-width: 5px;
+    }
+  
+    a {
+      width: 20rem;
+      margin: 0 auto 3rem auto;
+      
+      border: 0;
+      padding: 1.5rem 1rem;
+  
+      color: var(--white);
+      border-radius: 5px;
+  
+      font-size: 1.25em;
+      cursor: pointer;
+  
+      transition: background-color .25s;
+      background-color: var(--green);   
+  
+      &:focus,
+      &:hover {
+        background-color: var(--dark-green);  
+      }
+    }
+  
+  
+    .correct-answers-box {
+      font-family: 'Rajdhani', 'Roboto', sans-serif;
+    }
+  
+    p {
+      color: var(--white);
+      font-size: 2.5em;
+    }
+  
+    .correct-answers {
+      font-size: 10em;
+    }
+  }
+  
+  .information {
+  
+    text-align: center;
+    height: 100vh;
+  
+    display: flex;
+  
+    justify-content: space-between;
+    flex-direction: column;
+  
+    p {
+      font-size: 1.75em;
+      color: var(--white);
+  
+      margin-bottom: 1rem;
+    }
+  
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  
+    form {
+      width: 90%;
+      max-width: 340px;
+  
+      margin: 0 auto;
+    }
+  
+    input {
+      width: 100%;
+      border: 0;
+  
+      padding: 1.5rem 1rem;
+      background-color: var(--gray-bg);
+  
+      color: var(--dark-gray);
+  
+      &:focus {
+        outline-color: var(--dark-gray);
+      }
+  
+      &::placeholder {
+        color: var(--dark-gray);
+      }
+    }
+  
+    
+  
+    button {
+      width: 70%;
+      padding: 1.5rem 1rem;
+  
+      color: var(--white);
+      border: 0;
+  
+      border-radius: 5px;
+      font-size: 1.25em;
+      
+      margin: 1rem auto 0 auto;
+      cursor: pointer;
+  
+      transition: background-color .25s;
+      background-color: var(--green);   
+  
+      &:focus,
+      &:hover {
+        background-color: var(--dark-green);  
+      }
+    } 
+  }
+}

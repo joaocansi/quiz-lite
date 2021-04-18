@@ -1,0 +1,42 @@
+:root {
+  --white: #fff;
+  --blue: #97B2D2;
+  --dark-blue: #8da7c7;
+  --yellow: #ECEE8A;
+  --green: #82d985;
+  --dark-green: #81d384;
+  --red: #FF8080;
+  --dark-red: #f07777;
+
+  --gray-bg: #F9F9F9;
+  --dark-gray: #8C8C8C;
+  --light-gray: #EBEBEB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--gray-bg);
+  font-family: 'Archivo', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, fieldset, textarea, button {
+  font-family: 'Archivo', sans-serif
+}
