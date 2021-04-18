@@ -33,23 +33,23 @@ This project allows you to create and play quizzes. You'll be able to create you
 </p>
 
 <p align="center">
-  <img width="700" src=".github/search-quiz.png" />
+  <img width="700" src=".github/search_quiz.png" />
 </p>
 
 <p align="center">
-  <img width="700" src=".github/search-result.png" />
+  <img width="700" src=".github/search_result.png" />
 </p>
 
 <p align="center">
-  <img width="700" src=".github/quiz-result.png" />
+  <img width="700" src=".github/quiz_result.png" />
 </p>
 
 <p align="center">
-  <img width="700" src=".github/quiz-player-result.png" />
+  <img width="700" src=".github/quiz_player_result.png" />
 </p>
 
 <p align="center">
-  <img width="700" src=".github/quiz-player-info.png" />
+  <img width="700" src=".github/quiz_player_info.png" />
 </p>
 
 <p align="center">
